@@ -14,7 +14,10 @@ User must sign in to check out
 
     [Documentation]  Sign Up AutoTexting
     [Tags]  Smoke
-    Open Browser  http://beta-dot-datatest-148118.appspot.com/#!/signup  chrome
+    Open Browser  http://beta-dot-datatest-148118.appspot.com/#!/login  chrome
+    sleep  6s
+    #Click link  xpath=(//SPAN[text()='Sign up now'])[1]
+    Click Link  \#!/signup
     Wait Until Page Contains  Sign Up
     sleep  3s
     Input text  name=fname  sahil
