@@ -17,6 +17,7 @@ User must sign in to view the application
     Open Browser  http://beta-dot-datatest-148118.appspot.com/#!/login  chrome
     sleep  6s
     #Click link  xpath=(//SPAN[text()='Sign up now'])[1]
-    Click Link  \#!/signup
+    #Click Link  \#!/signup
+    Click element  xpath=/html/body/div[1]/div/div/div/div/div/p[1]/a   #here the xpath of html works
 
 *** Keywords ***

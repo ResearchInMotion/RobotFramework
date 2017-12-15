@@ -12,7 +12,7 @@ Library  OperatingSystem
 
 User must sign in to check out
 
-    [Documentation]  This is some basic information about the test
+    [Documentation]  Incorrect Sign
     [Tags]  Smoke
     Open Browser  http://beta-dot-datatest-148118.appspot.com/#!/login  chrome
     Maximize Browser Window

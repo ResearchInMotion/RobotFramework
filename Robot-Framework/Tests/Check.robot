@@ -23,8 +23,6 @@ User must sign in to view the application
     #Wait Until Page Contains  Welcome to Retail Analytics and Marketing insights dashboard !
     sleep  7s
     Click button  xpath=//BUTTON[@id='modalSearch']
-    sleep  15s
-    Click Element  xpath=//LABEL[@class='btn btn-default focus']
     sleep  7s
     Click Element  xpath=//li[contains(text(),' Orders By Category')]
     sleep  7s
@@ -57,6 +55,10 @@ User must sign in to view the application
     Click Element  xpath=(//LI[@ng-repeat='k in groups[2].filterList'])[1]
     sleep  12s
     Click Element  xpath=(//LI[@ng-repeat='k in groups[2].filterList'])[2]
+    sleep  14s
+    Click Element  xpath=(//SPAN[@uib-accordion-header=''])[4]
+    sleep  5s
+    Click Element  xpath=(//LI[@ng-repeat='(k,v) in audienceUsecases | audienceFilter:audienceFilterKey'])[1]
 
 
 
