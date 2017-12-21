@@ -23,42 +23,43 @@ User must sign in to view the application
     #Wait Until Page Contains  Welcome to Retail Analytics and Marketing insights dashboard !
     sleep  10s
     Click button  xpath=//BUTTON[@id='modalSearch']
-    sleep  10s
+    sleep  40s
     Click Element  xpath=//li[contains(text(),' Orders By Category')]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=//li[contains(text(),' Avg Time Between Orders')]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=//li[contains(text(),' Average Order Size')]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=//li[contains(text(),' Order By Price')]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=(//SPAN[@uib-accordion-header=''])[2]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=(//LI[@ng-repeat='filter in group.filterList'])[7]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=(//LI[@ng-repeat='filter in group.filterList'])[8]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=(//LI[@ng-repeat='filter in group.filterList'])[9]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=(//LI[@ng-repeat='filter in group.filterList'])[10]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=(//LI[@ng-repeat='filter in group.filterList'])[11]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=(//LI[@ng-repeat='filter in group.filterList'])[12]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=(//LI[@ng-repeat='filter in group.filterList'])[13]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=(//LI[@ng-repeat='filter in group.filterList'])[8]
-    sleep  9s
+    sleep  15s
     Click Element  xpath=(//SPAN[@uib-accordion-header=''])[3]
-    sleep  9s
+    sleep  20s
     Click Element  xpath=(//LI[@ng-repeat='k in groups[2].filterList'])[1]
-    sleep  14s
+    sleep  22s
     Click Element  xpath=(//LI[@ng-repeat='k in groups[2].filterList'])[2]
-    sleep  7s
+    sleep  25s
     Click Element  xpath=(//SPAN[@uib-accordion-header=''])[4]
-    sleep  9s
+    sleep  18s
     Click Element  xpath=(//LI[@ng-repeat='(k,v) in audienceUsecases | audienceFilter:audienceFilterKey'])[1]
+
 
 
 

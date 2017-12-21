@@ -1,114 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.2 (Python 3.6.2 on win32)" generated="20171214 18:29:33.657">
-<suite id="s1" name="Check" source="C:\Users\nex4vgv\PycharmProjects\Robot-Framework\tests\Check.robot">
-<test id="s1-t1" name="User must sign in to view the application">
+<robot generator="Robot 3.0.2 (Python 3.6.2 on win32)" generated="20171218 15:27:47.571">
+<suite id="s1" name="Sample" source="C:\Users\nex4vgv\PycharmProjects\Robot-Framework\tests\Sample.robot">
+<test id="s1-t1" name="User must sign in to check out">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>http://beta-dot-datatest-148118.appspot.com/#!/login</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20171214 18:29:33.967" level="INFO">Opening browser 'chrome' to base url 'http://beta-dot-datatest-148118.appspot.com/#!/login'.</msg>
-<status status="PASS" starttime="20171214 18:29:33.967" endtime="20171214 18:29:39.539"></status>
+<msg timestamp="20171218 15:27:47.809" level="INFO">Opening browser 'chrome' to base url 'http://beta-dot-datatest-148118.appspot.com/#!/login'.</msg>
+<status status="PASS" starttime="20171218 15:27:47.809" endtime="20171218 15:27:52.744"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>LI for Marketing</arg>
 </arguments>
-<status status="PASS" starttime="20171214 18:29:39.540" endtime="20171214 18:29:39.575"></status>
+<status status="PASS" starttime="20171218 15:27:52.744" endtime="20171218 15:27:52.782"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>name=email</arg>
-<arg>demo@pb.com</arg>
+<arg>neha.setia@pb.com</arg>
 </arguments>
-<msg timestamp="20171214 18:29:39.576" level="INFO">Typing text 'demo@pb.com' into text field 'name=email'.</msg>
-<status status="PASS" starttime="20171214 18:29:39.575" endtime="20171214 18:29:39.841"></status>
+<msg timestamp="20171218 15:27:52.783" level="INFO">Typing text 'neha.setia@pb.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20171218 15:27:52.783" endtime="20171218 15:27:53.111"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>name=pwd</arg>
-<arg>pbdemobeta</arg>
+<arg>Test@123</arg>
 </arguments>
-<msg timestamp="20171214 18:29:39.842" level="INFO">Typing text 'pbdemobeta' into text field 'name=pwd'.</msg>
-<status status="PASS" starttime="20171214 18:29:39.842" endtime="20171214 18:29:40.028"></status>
+<msg timestamp="20171218 15:27:53.112" level="INFO">Typing text 'Test@123' into text field 'name=pwd'.</msg>
+<status status="PASS" starttime="20171218 15:27:53.111" endtime="20171218 15:27:53.281"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20171214 18:29:43.045" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20171214 18:29:40.028" endtime="20171214 18:29:43.045"></status>
+<msg timestamp="20171218 15:27:56.283" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20171218 15:27:53.282" endtime="20171218 15:27:56.283"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//BUTTON[@class='btn btn-primary btn-block btn-lg spacer-top-xs btn-pill']</arg>
 </arguments>
-<msg timestamp="20171214 18:29:43.045" level="INFO">Clicking button 'xpath=//BUTTON[@class='btn btn-primary btn-block btn-lg spacer-top-xs btn-pill']'.</msg>
-<status status="PASS" starttime="20171214 18:29:43.045" endtime="20171214 18:29:43.233"></status>
+<msg timestamp="20171218 15:27:56.283" level="INFO">Clicking button 'xpath=//BUTTON[@class='btn btn-primary btn-block btn-lg spacer-top-xs btn-pill']'.</msg>
+<status status="PASS" starttime="20171218 15:27:56.283" endtime="20171218 15:27:56.462"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>7s</arg>
+<arg>12s</arg>
 </arguments>
-<msg timestamp="20171214 18:29:50.237" level="INFO">Slept 7 seconds</msg>
-<status status="PASS" starttime="20171214 18:29:43.234" endtime="20171214 18:29:50.237"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>xpath=//BUTTON[@id='modalSearch']</arg>
-</arguments>
-<msg timestamp="20171214 18:29:50.237" level="INFO">Clicking button 'xpath=//BUTTON[@id='modalSearch']'.</msg>
-<status status="PASS" starttime="20171214 18:29:50.237" endtime="20171214 18:29:50.871"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>15s</arg>
-</arguments>
-<msg timestamp="20171214 18:30:05.881" level="INFO">Slept 15 seconds</msg>
-<status status="PASS" starttime="20171214 18:29:50.872" endtime="20171214 18:30:05.881"></status>
+<msg timestamp="20171218 15:28:08.464" level="INFO">Slept 12 seconds</msg>
+<status status="PASS" starttime="20171218 15:27:56.463" endtime="20171218 15:28:08.464"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>xpath=//LABEL[@class='btn btn-default focus']</arg>
+<arg>xpath=//SPAN[text()='Upload your customer data for better insights']</arg>
 </arguments>
-<msg timestamp="20171214 18:30:05.881" level="INFO">Clicking element 'xpath=//LABEL[@class='btn btn-default focus']'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20171214 18:30:06.311" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20171214 18:30:05.921" endtime="20171214 18:30:06.311"></status>
+<msg timestamp="20171218 15:28:08.464" level="INFO">Clicking element 'xpath=//SPAN[text()='Upload your customer data for better insights']'.</msg>
+<status status="PASS" starttime="20171218 15:28:08.464" endtime="20171218 15:28:08.746"></status>
 </kw>
-<msg timestamp="20171214 18:30:06.315" level="FAIL">Element with locator 'xpath=//LABEL[@class='btn btn-default focus']' not found.</msg>
-<status status="FAIL" starttime="20171214 18:30:05.881" endtime="20171214 18:30:06.325"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20171218 15:28:13.756" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20171218 15:28:08.746" endtime="20171218 15:28:13.756"></status>
 </kw>
-<doc>Sign In Flow and Status Code 200</doc>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//SPAN[@class='control-indicator'])[1]</arg>
+</arguments>
+<msg timestamp="20171218 15:28:13.756" level="INFO">Clicking element 'xpath=(//SPAN[@class='control-indicator'])[1]'.</msg>
+<status status="PASS" starttime="20171218 15:28:13.756" endtime="20171218 15:28:13.861"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20171218 15:28:16.867" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20171218 15:28:13.862" endtime="20171218 15:28:16.867"></status>
+</kw>
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>id=fileUpload</arg>
+<arg>C:\\Users\\nex4vgv\\Desktop\\TestData_upload\\Canada.csv</arg>
+</arguments>
+<status status="PASS" starttime="20171218 15:28:16.867" endtime="20171218 15:28:16.943"></status>
+</kw>
+<doc>This is some basic information about the test</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="FAIL" starttime="20171214 18:29:33.957" endtime="20171214 18:30:06.335" critical="yes">Element with locator 'xpath=//LABEL[@class='btn btn-default focus']' not found.</status>
+<status status="PASS" starttime="20171218 15:27:47.808" endtime="20171218 15:28:16.943" critical="yes"></status>
 </test>
-<doc>Opening of Application User Interface Log In Page and Select the brand.</doc>
-<status status="FAIL" starttime="20171214 18:29:33.657" endtime="20171214 18:30:06.336"></status>
+<doc>Opening of Application User Interface Log In Page</doc>
+<status status="PASS" starttime="20171218 15:27:47.571" endtime="20171218 15:28:16.949"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1">Smoke</stat>
+<stat pass="1" fail="0">Smoke</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Check">Check</stat>
+<stat pass="1" fail="0" id="s1" name="Sample">Sample</stat>
 </suite>
 </statistics>
 <errors>

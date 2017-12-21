@@ -20,11 +20,11 @@ User must sign in to check out
     Click Link  \#!/signup
     Wait Until Page Contains  Sign Up
     sleep  3s
-    Input text  name=fname  sahil
+    Input text  name=fname  Neha
     sleep  2s
-    Input text  name=lname  nagpal
+    Input text  name=lname  Setia
     sleep  2s
-    Input text  name=email  sahil.nagpal@pb.com
+    Input text  name=email  neha.setia@pb.com
     sleep  2s
     Input text  name=companyName  Yonex
     sleep  2s
